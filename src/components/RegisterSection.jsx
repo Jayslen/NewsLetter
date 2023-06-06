@@ -28,7 +28,7 @@ export function RegisterSection ({ changeState, checkEmail, email }) {
             Email address
           </label>
           <input
-            type='text'
+            type='email'
             id='email'
             placeholder='example@gmail.com'
             className={`border-[1px] ${
