@@ -18,17 +18,17 @@ function App () {
   }
 
   const handleClickEmail = () => {
-    if(/@.+\.com/g.test(email)) {
+    if (/@.+\.com/g.test(email)) {
       setRegister(!register)
     } else {
       setWrong(true)
     }
   }
- 
+
   return (
     <>
       <main className='h-screen w-screen grid place-content-center px-8'>
-        {!register ? <RegisterSection changeState={handleClickEmail} checkEmail={input} email={wrong}/> : <SuccessSection changeState={handleClick}/>}
+        {!register ? <RegisterSection changeState={handleClickEmail} checkEmail={input} email={wrong} /> : <SuccessSection changeState={handleClick} />}
       </main>
     </>
   )
